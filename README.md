@@ -4,6 +4,10 @@
 ## 语言
 Python 3.x
 
+## 依赖库文件 
+pycipher
+
+pip install pycipher
 ## 初衷
 想要快速的得到CTF中密码学中低难度题目的分数
 
