@@ -1,6 +1,8 @@
 # _*_ coding:UTF-8 _*_
 # main.py
 
+# author:Ollyder
+# github:git@github.com:Ollyder/CTF_tools.git or https://github.com/Ollyder/CTF_tools.git
 
 
 '''
@@ -8,7 +10,9 @@ CTF密码题的一个小工具
 md5加密、摩斯密码加解密、凯撒密码加解密和爆破、栅栏密码的解密和爆破、简单替换密码
 爆破
 '''
-
+'''
+This is a small tool to solove problem of CRYPTO in CTF.
+'''
 
 
 import source.md5_moudle
