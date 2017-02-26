@@ -17,13 +17,14 @@ from source.morse_moudle import Morse
 import source.caesar
 import source.Railfence
 import urllib.request
+import source.MD5_online_crack
 
 
 def begin():
     print('''
 ----------------------------------------------------------
         1、MD5加密                  10、栅栏解密
-        2、MD5在线解密网址          11、栅栏爆破
+        2、MD5在线解密          11、栅栏爆破
         3、Base64加密               12、字符串反转
         4、Base64解密               13、URL编码
         5、Morse加密                14、URL解码
@@ -59,14 +60,19 @@ def md5():
 
 
 def md5_net():
-    print('''
-    如下在线解密网站：
-            1、http://www.dmd5.com/
-            2、http://www.xmd5.org/
-            3、http://pmd5.com/
-            4、http://www.cmd5.com/
-    ''')
+    b = input("需要解密的字符串:")
+    a = source.MD5_online_crack.md5_online_crack(b) #实例化对象
+    try:
+        print("www.dmd5.com解密中...")
+        a.dmd5_online()
+    except:
+        print("连接到dmd5.com失败...")
 
+    try:
+        print("http://pmd5.com解密中...")
+        a.pmd5_online()
+    except:
+        print("连接到pmd5.com失败...")
 
 def b64de():
     string = input('需解密的字符串：')
