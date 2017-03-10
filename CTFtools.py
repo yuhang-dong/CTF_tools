@@ -15,13 +15,14 @@ This is a small tool to solove problem of CRYPTO in CTF.
 '''
 
 
-import source.md5_moudle
-import source.b64_moudle
+from source import md5_moudle,MD5_online_crack,b64_moudle,caesar,Railfence
+#import source.md5_moudle
+#import source.b64_moudle
 from source.morse_moudle import Morse
-import source.caesar
-import source.Railfence
+#import source.caesar
+#import source.Railfence
 import urllib.request
-import source.MD5_online_crack
+#import source.MD5_online_crack
 
 
 def begin():
